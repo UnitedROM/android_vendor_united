@@ -1,5 +1,5 @@
 # Inherit common Havoc stuff
-$(call inherit-product, vendor/havoc/config/common.mk)
+$(call inherit-product, vendor/united/config/common.mk)
 
 PRODUCT_SIZE := full
 
