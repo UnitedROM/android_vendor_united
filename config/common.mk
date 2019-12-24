@@ -61,7 +61,7 @@ PRODUCT_COPY_FILES += \
 
 # Havoc-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
-    vendor/unietd/config/permissions/havoc-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-sysconfig.xml
+    vendor/united/config/permissions/havoc-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-sysconfig.xml
 
 # Copy all Havoc-specific init rc files
 $(foreach f,$(wildcard vendor/united/prebuilt/common/etc/init/*.rc),\
