@@ -9,7 +9,7 @@ TARGET_BOOTANIMATION_SIZE := $(shell \
   fi )
 
 # get a sorted list of the sizes
-bootanimation_sizes := $(subst .zip,,$(shell ls -1 vendor/havoc/bootanimation | sort -rn))
+bootanimation_sizes := $(subst .zip,,$(shell ls -1 vendor/united/bootanimation | sort -rn))
 
 # find the appropriate size and set
 define check_and_set_bootanimation
@@ -24,5 +24,5 @@ $(eval TARGET_BOOTANIMATION_NAME := $(shell \
 endef
 $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size)))
 
-PRODUCT_COPY_FILES += vendor/havoc/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+PRODUCT_COPY_FILES += vendor/united/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
