@@ -1,11 +1,11 @@
 # Inherit full common Havoc stuff
-$(call inherit-product, vendor/havoc/config/common_full.mk)
+$(call inherit-product, vendor/united/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME
 
 # Include Havoc LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/havoc/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/united/overlay/dictionaries
 
-$(call inherit-product, vendor/havoc/config/telephony.mk)
+$(call inherit-product, vendor/united/config/telephony.mk)
